@@ -1,3 +1,10 @@
+// import Amsterdam1Map from '../public/svg-maps/amsterdam1.svg'
+
 export default function Home() {
-  return <h1>Meeting Room System</h1>;
+  return (
+    <div>
+      {/* uncomment to show Amsterdam's map */}
+      {/* <Amsterdam1Map /> */}
+    </div>
+  )
 }
