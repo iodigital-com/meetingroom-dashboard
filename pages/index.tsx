@@ -1,10 +1,10 @@
-// import Amsterdam1Map from '../public/svg-maps/amsterdam1.svg'
+import Amsterdam1Map from '../map-components/amsterdam1'
 
 export default function Home() {
   return (
     <div>
       {/* uncomment to show Amsterdam's map */}
-      {/* <Amsterdam1Map /> */}
+      <Amsterdam1Map />
     </div>
   )
 }
