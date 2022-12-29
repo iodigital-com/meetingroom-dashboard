@@ -1,7 +1,5 @@
 ![iO logo](/public/io.svg)
 
-> Do you like to contribute an article? Head over to [the contribution page](https://techhub.iodigital.com/contribute) to see how!
-
 # iO meeting room
 
 ## Installation
