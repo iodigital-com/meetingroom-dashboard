@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "IO.MeetinRoomApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7181"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 30126,
+      "useSSL": false
+    }
+  }
+}
