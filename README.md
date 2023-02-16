@@ -1,11 +1,11 @@
-![iO logo](/public/io.svg)
+![iO logo](frontend/public/io.svg)
 
 # iO meeting room
 
 ## Installation
 
 ```bash
-yarn install
+cd frontend && yarn install
 ```
 
 ## Development
@@ -13,7 +13,7 @@ yarn install
 First, run the development server:
 
 ```bash
-yarn start
+cd frontend && yarn start
 ```
 
 or
