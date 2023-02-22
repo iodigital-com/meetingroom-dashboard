@@ -5,10 +5,10 @@ on:
     - main
 env:
   AZURE_FUNCTIONAPP_NAME: iomeetingroomapp
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: IO.MeetinRoomApp\.
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: backend\IO.MeetinRoomApp\.
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
-  WORKING_DIRECTORY: IO.MeetinRoomApp
+  WORKING_DIRECTORY: backend\IO.MeetinRoomApp
 jobs:
   build:
     runs-on: windows-latest
@@ -42,5 +42,5 @@ jobs:
       uses: Azure/functions-action@v1
       with:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
-        publish-profile: ${{ secrets.iomeetingroomapp_DE40 }}
+        publish-profile: ${{ secrets.iomeetingroomapp_D3A0 }}
         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
