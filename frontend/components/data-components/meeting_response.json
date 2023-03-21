@@ -1,0 +1,3432 @@
+[
+  {
+    "availabilityView": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022200000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "error": null,
+    "scheduleId": "alexanderplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-08T15:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Alexanderplein",
+        "start": {
+          "dateTime": "2023-03-08T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Michelle de Boer Kennismakingsgesprek",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222222200002200000000000000000000000000000000000000000000000000000000000000000000022222000000022202222200000000000000000000000000000000000000000000000000000000000000000000000000000002222200022",
+    "error": null,
+    "scheduleId": "beukenplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Beukenplein",
+        "start": {
+          "dateTime": "2023-03-07T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Pauline Hagers Tussentijdse gesprek Pauline + Arron",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T15:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-07T15:05:17.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Reserved",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 6
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Microsoft Teams Meeting",
+        "start": {
+          "dateTime": "2023-03-08T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Dave Bitter iO Consultancy w/ Dave",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Teams of kantoor; Campus Amsterdam - Beukenplein",
+        "start": {
+          "dateTime": "2023-03-08T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Diny Eeltink Bila Diny/Lasse - vervolgstappen werkzaamheden",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Microsoft Teams Meeting",
+        "start": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Dave Bitter Development bij de ANWB",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T11:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Microsoft Teams Meeting; Campus Amsterdam - Beukenplein",
+        "start": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Tanja van der Heide Meetingroom voor ons gesprek",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Microsoft Teams Meeting; Campus Amsterdam - Beukenplein",
+        "start": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Edwin Treur Sodexo SLA alignment",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022",
+    "error": null,
+    "scheduleId": "dedam.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-09T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - De Dam (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Rowenna Zwart Voorbereiding QBR",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222222200000000000000000000000000000000000000000000000000000000000000000000000000022222000000000000022200000000000000000000000000000000000000000000000000000000000000000000000000000000000000022",
+    "error": null,
+    "scheduleId": "europaplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Europaplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Ivar Patterer Jessie x Ivar",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-08T08:59:09.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Reserved",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 6
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 5
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Europaplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Bas Smabers Bas & Heleen bijpraten Kia",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Europaplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Bas Smabers Bijpraten Leon &Beppie/Bas",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022220000000000000000000000000000000000000000000000000000000000000000000000002222222000000000",
+    "error": null,
+    "scheduleId": "mercatorplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Mercatorplein (Sparklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Kam Chee Wong 1-1 Esther",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T14:15:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Mercatorplein (Sparklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Jessie Otte WAHTS - Weekly catch-up",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Mercatorplein (Sparklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T08:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Jitske Naberman Leads marketplaces doornemen",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Mercatorplein (Sparklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Ivar Patterer Babboe x iO: weekly call",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000222200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000222222202222",
+    "error": null,
+    "scheduleId": "muntplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-08T11:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-08T10:04:50.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Reserved",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 6
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 5
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T11:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Microsoft Teams Meeting; Campus Amsterdam - Muntplein",
+        "start": {
+          "dateTime": "2023-03-09T09:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Edwin Treur Achmea estimates -> staffing+ tijdslijnen ",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Muntplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T11:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Guido Bruijn OR Event moderating",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "000222211110000000000000000000000000000000000000000000000000000000000000000000000022222222222220002222222220000000000000000000000000000000000000000000000000000000000000000000000022202222200022",
+    "error": null,
+    "scheduleId": "museumplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T13:15:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Guido Bruijn Guido/Wieke: AWS Marketingplan",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 1,
+        "subject": "OPTIE - Conceptpres merci bedankdag",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 5
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Rogier Saarloos [BR Mobile] Sprint Review",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T10:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Rogier Saarloos iOS / Android planning",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T10:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold HvA op bezoek",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Nazanin Nasab <Untitled> Project Technical Discussion",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Daniel Plaza Quarterly catch-up with Ahmad",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T09:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Guido Bruijn Opportunity Summit website",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T11:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Brian Hirman Brian Hirman x Hans Beumer",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Museumplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Nils Gerritsen Bi-weekly verf.nl INTERN",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "002220222022222000000000000000000000000000000000000000000000000000000000000000002220000222200022222220000000000000000000000000000000000000000000000000000000000000000000000000002220002220000022",
+    "error": null,
+    "scheduleId": "nieuwmarkt.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Nieuwmarkt (Spaklerweg 52, Amsterdam, BE)",
+        "start": {
+          "dateTime": "2023-03-07T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Jitske Naberman iO website x VWO",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T14:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Nieuwmarkt (Spaklerweg 52, Amsterdam, BE)",
+        "start": {
+          "dateTime": "2023-03-07T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Aron Spies Kennismaking Lois van Aken - Contentspecialist ",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T16:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Nieuwmarkt (Spaklerweg 52, Amsterdam, BE)",
+        "start": {
+          "dateTime": "2023-03-07T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Jitske Naberman 1-1 Eddy/Jitske",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Nieuwmarkt; Campus Amsterdam - Nieuwmarkt (Spaklerweg 52, Amsterdam, BE)",
+        "start": {
+          "dateTime": "2023-03-08T08:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Aron Spies Dagstart Recruitment",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T11:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-08T10:13:40.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Reserved",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 6
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 5
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-08T12:00:10.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Reserved",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 6
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 5
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Microsoft Teams-vergadering; Campus Amsterdam - Nieuwmarkt",
+        "start": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Astrid van der Sluijs Vattenfall InCharge bespreken",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Nieuwmarkt (Spaklerweg 52, Amsterdam, BE)",
+        "start": {
+          "dateTime": "2023-03-09T08:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Rowenna Zwart HR - update",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T10:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Nieuwmarkt (Spaklerweg 52, Amsterdam, BE)",
+        "start": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Jitske Naberman CRO x sales",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Microsoft Teams-vergadering; Campus Amsterdam - Nieuwmarkt",
+        "start": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Andries Hiemstra 1:1 Bas/ Andries",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222222222220000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "error": null,
+    "scheduleId": "noordermarkt.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Noordermarkt (Spaklerweg 52, Amsterdam, BE)",
+        "start": {
+          "dateTime": "2023-03-07T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Bas Derks Bas Derks Debic",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222220000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "error": null,
+    "scheduleId": "raamplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Raamplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Esther de Roller GV updates",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222222222222222220000000000000000000000000000000000000000000000000000000000000222222222002222022222002222222222000000000000000000000000000000000000000000000000000000000000000002220000000000022",
+    "error": null,
+    "scheduleId": "rembrandtplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Robin van der Wal Bespreking Ontruimingsoefening (BHV)",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T16:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold Grow & Bloom workshop",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T08:45:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T08:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Léon M. Bosch review / final DJI plan ",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Daniel Plaza Explain contract models",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T11:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-08T10:39:02.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Reserved",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 6
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 5
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Bas Smabers Uitdenken stappenplan new business aanvragen",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein",
+        "start": {
+          "dateTime": "2023-03-08T13:45:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Wouter Reijm Overleg Kia ",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T16:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Larissa van Haasteren Presentatie voorstel social video's Kia Nederland",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T08:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Minouk Fieggen Weekly commercial marcom (Rembrandtplein)",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Rembrandtplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Aron Spies Kennismaking Scarlett Gardos - Social Media Specialist ",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "202222222222200000000000000000000000000000000000000000000000000000000000000000222222222022200022222222222222200000000000000000000000000000000000000000000000000000000000000000000022222220000022",
+    "error": null,
+    "scheduleId": "stadionplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Henrik Schulze Wekelijks Transavia overleg",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-07T13:00:14.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Reserved",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 6
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 5
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T15:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Arthur Stolwijk PM training 1",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T08:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T08:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold 1-op-1: Marc en Pauline",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T08:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold 1-op-1: Marc en Aaminah",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold Talent Talk & Program - Fysieke meeting",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T11:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T10:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Irvin Appiah POP ingevuld",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Polina Kabanova Polina next steps",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold 1-op-1: Marc en Deniz",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold 1-op-1: Marc en Leon",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T13:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold 1-op-1: Marc en Quinny",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T14:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold 1-op-1: Marc en Sena",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T14:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold 1-op-1: Marc en Shanine",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T15:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold 1-op-1: Marc en Arron",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T09:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold Status Ambassador Team Campus",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 5
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T09:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold Status Ambassador Team Sharing Knowledge",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T10:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marc Arnold Status Ambassador Team Sustainability",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 5
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Stadionplein; Campus Amsterdam - Stadionplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Tess Zwaagstra Tess & Marc | Vervolg plan 2023",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "error": null,
+    "scheduleId": "surinameplein.amsterdam@iodigital.com",
+    "scheduleItems": [],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002222222220000000",
+    "error": null,
+    "scheduleId": "victorieplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Victorieplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Oscar van der Schoot sro",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Victorieplein",
+        "start": {
+          "dateTime": "2023-03-09T08:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Tom Hooijer Leolux doorloop",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T10:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Victorieplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Jessie Otte Biweekly JMango360 x iO",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222222202220000000000000000000000000000000000000000000000000000000000000000000000022222000000022222000000000000000000000000000000000000000000000000000000000000000000000000000000000002222200000",
+    "error": null,
+    "scheduleId": "waterlooplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Waterlooplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Jules Meijs UvA wekelijkse check-in",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Waterlooplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Yoric Cowan Call CSU",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T15:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Waterlooplein",
+        "start": {
+          "dateTime": "2023-03-07T14:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Quinny Breinburg Tussentijdse gesprek Deniz & Quinny",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Waterlooplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T09:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Sander de Jong Denise & Sander",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-08T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Dave Bitter Check-in Michele & Dave",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T11:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Waterlooplein",
+        "start": {
+          "dateTime": "2023-03-09T10:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Minouk Fieggen Marcom A'dam weekly (Waterlooplein)",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 17,
+        "minute": 0,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 8,
+        "minute": 0,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  },
+  {
+    "availabilityView": "222222200000000000000000000000000000000000000000000000000000000000000000000000000222222200000022222222222000000000000000000000000000000000000000000000000000000000000000000000000000222222202222",
+    "error": null,
+    "scheduleId": "weesperplein.amsterdam@iodigital.com",
+    "scheduleItems": [
+      {
+        "end": {
+          "dateTime": "2023-03-07T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Weesperplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-07T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Hassan Saoui Second interview Pierre Veissi Front end Developer iO Amsterdam",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-07T14:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Weesperplein; Campus Amsterdam - Weesperplein",
+        "start": {
+          "dateTime": "2023-03-07T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Madelon Westerbeek Statuscall lopende projecten",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 5
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T10:15:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Weesperplein",
+        "start": {
+          "dateTime": "2023-03-08T08:45:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Wouter Reijm Wouter overleg OBI4wan",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "",
+        "start": {
+          "dateTime": "2023-03-08T12:01:29.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Reserved",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 6
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 5
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-08T14:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Weesperplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-08T13:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Marek van den Oever Watching/translating sitespeed presentation",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T11:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Weesperplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T09:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Tara Bakker Maandelijkse linkbuilding team meeting",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Weesperplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T11:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Rowenna Zwart Hyundai - Instagram growth",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      },
+      {
+        "end": {
+          "dateTime": "2023-03-09T12:30:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "isPrivate": false,
+        "location": "Campus Amsterdam - Weesperplein (Spaklerweg 52, Amsterdam, NL)",
+        "start": {
+          "dateTime": "2023-03-09T12:00:00.0000000",
+          "timeZone": "UTC",
+          "additionalData": null,
+          "oDataType": null
+        },
+        "status": 2,
+        "subject": "Rik Ravelli HOL migratie bespreken",
+        "additionalData": {
+          "isMeeting": {
+            "valueKind": 5
+          },
+          "isRecurring": {
+            "valueKind": 6
+          },
+          "isException": {
+            "valueKind": 6
+          },
+          "isReminderSet": {
+            "valueKind": 6
+          }
+        },
+        "oDataType": null
+      }
+    ],
+    "workingHours": {
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "endTime": {
+        "hour": 23,
+        "minute": 59,
+        "second": 0
+      },
+      "startTime": {
+        "hour": 0,
+        "minute": 7,
+        "second": 0
+      },
+      "timeZone": {
+        "name": "Pacific Standard Time",
+        "additionalData": null,
+        "oDataType": null
+      },
+      "additionalData": null,
+      "oDataType": null
+    },
+    "additionalData": null,
+    "oDataType": null
+  }
+]

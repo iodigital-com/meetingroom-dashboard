@@ -1,0 +1,59 @@
+{
+	"amsterdam": {
+		"amsterdam1": [
+			{
+				"name": "Europaplein"
+			},
+			{
+				"name": "Mercatorplein"
+			},
+			{
+				"name": "Leidsplein"
+			},
+			{
+				"name": "Surinameplein"
+			},
+			{
+				"name": "Rembrandtplein"
+			},
+			{
+				"name": "Alexanderplein"
+			},
+			{
+				"name": "Raamplein"
+			},
+			{
+				"name": "Muntplein"
+			},
+			{
+				"name": "Victorieplein"
+			},
+			{
+				"name": "Noordermarkt"
+			}
+		],
+		"amsterdam2": [
+			{
+				"name": "Stadionplein"
+			},
+			{
+				"name": "Beukenplein"
+			},
+			{
+				"name": "Waterlooplein"
+			},
+			{
+				"name": "Museumplein"
+			},
+			{
+				"name": "Weesperplein"
+			},
+			{
+				"name": "Nieuwmarkt"
+			},
+			{
+				"name": "De Dam"
+			}
+		]
+	}
+}
