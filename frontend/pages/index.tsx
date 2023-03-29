@@ -1,4 +1,4 @@
-import NavBar from '@/components/nav-components/nav-bar'
+import NavBar from '../components/nav-components/nav-bar'
 
 const Home = () => {
   return (
