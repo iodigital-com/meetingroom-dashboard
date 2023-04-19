@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { fetchData } from 'utils/axios';
 import moment from 'moment';
-import NavBar from '@/components/nav-components/nav-bar';
 import TabView from '@/components/nav-components/tab-nav';
 import campusHashNames from '@/components/data-components/campus-hash.json';
 import { MapPageProps, MapPageData, CampusNameHash } from 'utils/types';
@@ -23,14 +22,38 @@ export default function MapPage({ data }: MapPageProps) {
 	const [campusData, setCampusData] = useState<CampusData>([]);
 
 	useEffect(() => {
-		function formatCampusData() {
-			const campuseData1: CampusData = data.campusData.map(getFormattedCampusData)
-			setCampusData(campuseData1)
-		}
+		const campusNameHash: CampusNameHash = campusHashNames
+    async function fetchDataAndUpdateState() {
+			try {
+				const response = await fetchData(`${config.BASE_URL}/GetAllRooms?code=${config.API_KEY}`, 'post', {
+					start: moment(),
+					end: moment().add(9, 'hours'),
+					campus: campusNameHash[getCampusName(data.slug)],
+					intervals: 15,
+				});
+	
+				const formattedCampusData: CampusData = response.data.map(getFormattedCampusData);
+				setCampusData(formattedCampusData);
+			} catch (error) {
+				console.log('fetchDataAndUpdateState ---> AxiosError', error)
+			}
+    }
 
-		formatCampusData()
-	}, []);
+    function formatCampusData() {
+      const campusData1: CampusData = data.campusData.map(getFormattedCampusData);
+      setCampusData(campusData1);
+    }
 
+    formatCampusData();
+
+    const intervalId = setInterval(() => {
+      fetchDataAndUpdateState();
+    }, 120000); // Fetch data every 2 minutes
+
+    return () => {
+      clearInterval(intervalId); // Clean up interval on component unmount
+    };
+  }, []);
 
 	const getFormattedCampusData = (campusData: MapPageData['campusData']) => {
 		const formattedCampusData = {
@@ -46,16 +69,13 @@ export default function MapPage({ data }: MapPageProps) {
 	}
 
 	return (
-		<div>
-			<NavBar />
-			<TabView tabs={[
-				{ label: 'Map View', content: data.slug },
-				{ label: 'List View', content: data.slug },
-				{ label: 'Joint View', content: data.slug}
-			]}
-				data={campusData}
-			/>
-		</div>
+		<TabView tabs={[
+			{ label: 'Map View', content: data.slug },
+			{ label: 'List View', content: data.slug },
+			{ label: 'Joint View', content: data.slug}
+		]}
+			data={campusData}
+		/>
 	);
 }
 
@@ -66,7 +86,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 	return { paths, fallback: false };
 };
 
-
 export const getStaticProps: GetStaticProps<MapPageProps> = async ({ params }) => {
 	const slug = params?.slug as string;
 	const campusName = getCampusName(slug)
@@ -75,12 +94,11 @@ export const getStaticProps: GetStaticProps<MapPageProps> = async ({ params }) =
 
 	const response = await fetchData(`${config.BASE_URL}/GetAllRooms?code=${config.API_KEY}`, 'post', {
 		start: moment(),
-		end: moment().add(1, 'hours'),
+		end: moment().add(9, 'hours'),
 		campus: campusNameHash[campusName],
 		intervals: 15
 	});
 
-	  const data: MapPageData = { slug, campusData: response.data }
+	const data: MapPageData = { slug, campusData: response.data }
 	return { props: { data } };
 };
-

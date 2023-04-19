@@ -156,7 +156,7 @@ const Amsterdam1Map = () => {
   }
 
   return (
-    <svg viewBox="0 0 640 450" style={{ width: 1000 }}>
+    <svg viewBox="0 0 640 450" style={{ width: '100%' }}>
       { renderEuropaplein()}
       { renderMercatorplein()}
       { renderLeidsplein()}
