@@ -8,7 +8,7 @@ const NavItemDiv = styled.div`
   align-items: center;
   padding: 0.5rem 1rem;
   color: #000;
-  background-color: #f5f5f5;
+  background-color: transparent;
 `;
 
 const StyledButton = styled.button`
@@ -16,15 +16,19 @@ const StyledButton = styled.button`
   cursor: pointer;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
+  background-color: transparent;
   color: #000;
+  display: flex;
 `;
 
-
-const Accordion = ({ children, label }: AccordionProps ) => {
+const Accordion = ({ children, label, onSelect}: AccordionProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   function toggleAccordion() {
     setIsExpanded((setIsExpanded) => !setIsExpanded);
+    if (onSelect) {
+      onSelect(label);
+    }
   }
 
   return (
@@ -35,12 +39,12 @@ const Accordion = ({ children, label }: AccordionProps ) => {
           aria-label={isExpanded ? 'Collapse submenu' : 'Expand submenu'}
           onClick={toggleAccordion}
         >
-          {isExpanded ? '-' : '+'}
+          <img src="/caret.svg" alt="caret" />
         </StyledButton>
       </NavItemDiv>
       {isExpanded && children}
     </>
   );
-}
+};
 
 export default Accordion;

@@ -7,48 +7,72 @@ import JointViewPage from 'pages/joint-view';
 import PageNotFound from 'pages/page-not-found';
 import CampusPreformattedData from '@/components/data-components/meeting-rooms.json';
 import { CampusDataType, TabViewProps, ComponetHashType, CampusDataArrayType } from 'utils/types';
+import mediaQueries from 'utils/mediaQueries';
 
 const TabContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
-	height: 100vh;
-	padding-top: 50px;
-	gap: 20px;
 	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	height: 100%;
+	padding-top: 5rem;
 `;
 
 const TabNav = styled.div`
 	position: fixed;
-	top: 15px;
-	right: 60px;
+	top: 2rem;
+	right: 3rem;
 	display: flex;
 	flex-direction: column;
-	height: 150px;
+	
+	${mediaQueries.medium} {
+    top: .5rem;
+		right: 4rem;
+  }
 `;
 
 const TabContent = styled.div`
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 5rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0.25rem;
 
   &.__map-only {
-    margin-left: 250px;
+		flex-grow: 1;
   }
 `;
 
 const TabButton = styled.button`
-	width: 100px;
-	height: 20px;
-	background-color: #f5f5f5;
+	width: 6rem;
+	height: 2rem;
+	border: none;
+	cursor: pointer;
+	padding: 0.125rem .2rem;
+	background-color: transparent;
 	color: #000;
+	text-align: center;
+  font-size: 1.125rem;
+	display: flex;
+	gap: .2rem;
+
+	img {
+		position: relative;
+    margin-top: .3rem;
+    margin-left: .5rem;
+    height: 1.25rem;
+    width: 1.25rem;
+	}
+
+	div {
+		display: inline-block;
+	}
 
 	&.activeTab {
 		background-color: #5A5A5A;
-		color: #fff;
-	}
-
-	&:hover {
-		background-color: green;
 		color: #fff;
 	}
 `;
@@ -65,7 +89,10 @@ const TabView = ({ tabs, data }: TabViewProps) => {
 	const [isOpen, setIsOpen] = useState(false);
   
   const toggleDropdown = () => setIsOpen(!isOpen);
-	const handleClick = (index: number) => setActiveIndex(index);
+	const handleClick = (index: number) => {
+		setActiveIndex(index)
+		setIsOpen(false)
+	};
 
 	const campusName = getCampusName(tabs[0].content)
   const preformattedData = CampusPreformattedData as CampusDataType;
@@ -77,7 +104,7 @@ const TabView = ({ tabs, data }: TabViewProps) => {
 				block: content
 			}),
 			'List View': <ListPage campuses={campusObject[content]} data={data} />,
-			'Joint View': <JointViewPage campuses={campusObject[content]} data={data} componentList={[Amsterdam1Map, Amsterdam2Map]} />
+			'Joint View': <JointViewPage campuses={campusObject[content]} data={data} component={Components[content]} />
 		}
 
 		return componetHash[label]  || <PageNotFound />
@@ -86,7 +113,7 @@ const TabView = ({ tabs, data }: TabViewProps) => {
 	return (
 		<TabContainer>
 			<TabNav>
-				<TabButton onClick={toggleDropdown}>Views { !isOpen ? <span>&#x25BC;</span> : <span>&#x25B2;</span> } </TabButton>
+				<TabButton className='__header' onClick={toggleDropdown}>Views <img src="/caret.svg" alt="caret" /> </TabButton>
 				{isOpen && (
 					tabs.map((tab, index) => (
 						<TabButton

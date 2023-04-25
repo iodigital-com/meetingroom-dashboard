@@ -1,59 +1,43 @@
 import React from 'react';
 import { NextPage } from 'next';
 import styled from 'styled-components';
-import CampusComponent from '@/components/list-components/campus';
+import ListView from './list-view';
 import { CampusListProps } from 'utils/types';
+import mediaQueries from 'utils/mediaQueries';
 
 const CampusListContainer = styled.div`
 	padding: 1rem;
   margin: 0 auto;
-	display: flex;
-`;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 
-const CampusListDiv = styled.div`
-	display: flex;
-	flex-direction: column;
-	overflow-x: scroll;
-	width: 50%;
+	${mediaQueries.medium} {
+    display: flex;
+		flex-direction: column-reverse;
+  }
 `;
 
 const CampusMapDiv = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -5rem;
 `;
 
-const CampusListTitle = styled.h1`
-  font-size: 2rem;
-  margin-bottom: 1rem;
-`;
-
-const CampusList: NextPage<CampusListProps> = ({ data, componentList }) => {
+const JointCampusView: NextPage<CampusListProps> = ({ campuses, data, component }) => {
+	const _component = component || '';
 
 	return (
 		<>
 			<CampusListContainer >
-				<CampusListDiv>
-					<CampusListTitle>Meeting rooms</CampusListTitle>
-					{
-						data.map((campus) => (
-							<span key={campus.id}>
-								<CampusComponent campus={campus} />
-							</span>
-						))
-					}
-				</CampusListDiv>
+				<ListView campuses={campuses} data={data} />
 				<CampusMapDiv>
 					{
-						componentList?.map((component: React.FunctionComponent, idx: number) => (
-							<span key={idx}>
-								{	
-									React.createElement(component, {
-										key: idx,
-									})
-								}
-							</span>
-						))
+						React.createElement(_component, {
+							key: 'campusMap',
+						})
 					}
 				</CampusMapDiv>
 			</CampusListContainer>
@@ -61,4 +45,4 @@ const CampusList: NextPage<CampusListProps> = ({ data, componentList }) => {
 	);
 };
 
-export default CampusList;
+export default JointCampusView;

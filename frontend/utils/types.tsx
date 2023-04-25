@@ -19,7 +19,7 @@ export interface CampusComponentProps {
 export interface CampusListProps {
 	campuses: Campus[];
 	data: CampusData[];
-  componentList?: React.FunctionComponent[];
+  component?: React.FunctionComponent;
 }
 
 export interface MapPageData {
@@ -67,14 +67,21 @@ export interface NavItem {
   id: string;
   label: string;
   path?: string;
-  subitems?: NavItem[];
+  subItems?: NavItem[];
 }
 
 export interface NavProps {
-  items: NavItem[];
+  navItems: NavItem[];
 }
 
-export interface AccordionProps { 
-  children: React.ReactNode; 
-  label: string 
-}
+export type AccordionProps = {
+  children?: React.ReactNode;
+  label: string;
+  onSelect?: (value: string) => void;
+};
+
+export type TooltipProps = {
+  content?: string;
+  children: React.ReactNode;
+  position?: 'top' | 'bottom' | 'left' | 'right';
+};
