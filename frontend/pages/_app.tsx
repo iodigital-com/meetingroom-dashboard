@@ -46,10 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Welcome to iO meeting room app where you can see available meeting rooms in real time"
         />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Meta Tags — Preview, Edit and Generate"
-        />
+        <meta property="og:title" content="Meeting Room Webapp" />
         <meta
           property="og:description"
           content="Welcome to iO meeting room app where you can see available meeting rooms in real time"
