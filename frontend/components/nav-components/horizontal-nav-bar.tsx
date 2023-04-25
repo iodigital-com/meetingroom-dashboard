@@ -172,7 +172,7 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
   // Render navigation bar with navigation items and their sub-items, as well as the floor items
   return (
     <Nav>
-      <NavItemLink href="/" className='home'><img src="../../io.svg" alt="home" /></NavItemLink>
+      <NavItemLink href="/" className='home'><img src="/io.svg" alt="home" /></NavItemLink>
       <NavContainerDiv ref={popoverRef}>
         {navItems && navItems.map((navItem, index) => (
           <NavItemDiv
@@ -181,7 +181,7 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
             onMouseLeave={handleMouseLeave}
           >
             {navItem.label}
-            <img src="../../caret.svg" alt="caret" />
+            <img src="/caret.svg" alt="caret" />
             {isPopoverVisible && activeItem === navItem && (
               <Popover>
                 <PopoverPointer />
@@ -204,7 +204,7 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
           onMouseLeave={handleMouseLeaveFloor}
         >
           Floor
-          <img src="../../caret.svg" alt="caret" />
+          <img src="/caret.svg" alt="caret" />
           {isFloorPopoverVisible && (
             <Popover>
               <PopoverPointer />

@@ -39,7 +39,7 @@ const Accordion = ({ children, label, onSelect}: AccordionProps) => {
           aria-label={isExpanded ? 'Collapse submenu' : 'Expand submenu'}
           onClick={toggleAccordion}
         >
-          <img src="../../caret.svg" alt="caret" />
+          <img src="/caret.svg" alt="caret" />
         </StyledButton>
       </NavItemDiv>
       {isExpanded && children}

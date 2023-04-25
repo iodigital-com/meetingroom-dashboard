@@ -113,7 +113,7 @@ const TabView = ({ tabs, data }: TabViewProps) => {
 	return (
 		<TabContainer>
 			<TabNav>
-				<TabButton className='__header' onClick={toggleDropdown}>Views <img src="../../caret.svg" alt="caret" /> </TabButton>
+				<TabButton className='__header' onClick={toggleDropdown}>Views <img src="/caret.svg" alt="caret" /> </TabButton>
 				{isOpen && (
 					tabs.map((tab, index) => (
 						<TabButton

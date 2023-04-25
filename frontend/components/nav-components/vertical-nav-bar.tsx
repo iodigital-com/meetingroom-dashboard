@@ -116,7 +116,7 @@ const NavBarDiv = ({ navItems }: NavProps) => {
         <span></span>
         <span></span>
       </Hamburger>
-      <NavItemLink href="/" className='home'><img src="../../io.svg" alt="home" /></NavItemLink>
+      <NavItemLink href="/" className='home'><img src="/io.svg" alt="home" /></NavItemLink>
       <Nav isOpen={isOpen} >
         <NavList>
           {navItems && navItems.map((navItem) => (

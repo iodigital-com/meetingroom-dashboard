@@ -8,6 +8,7 @@ import mediaQueries from 'utils/mediaQueries';
 const CampusListContainer = styled.div`
 	padding: 1rem;
   margin: 0 auto;
+	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
@@ -25,7 +26,8 @@ const CampusMapDiv = styled.div`
 	margin-bottom: -5rem;
 `;
 
-const CampusList: NextPage<CampusListProps> = ({ campuses, data, component }) => {
+const JointCampusView: NextPage<CampusListProps> = ({ campuses, data, component }) => {
+	const _component = component || '';
 
 	return (
 		<>
@@ -33,7 +35,7 @@ const CampusList: NextPage<CampusListProps> = ({ campuses, data, component }) =>
 				<ListView campuses={campuses} data={data} />
 				<CampusMapDiv>
 					{
-						React.createElement(component, {
+						React.createElement(_component, {
 							key: 'campusMap',
 						})
 					}
@@ -43,4 +45,4 @@ const CampusList: NextPage<CampusListProps> = ({ campuses, data, component }) =>
 	);
 };
 
-export default CampusList;
+export default JointCampusView;
