@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import styled from "styled-components";
-import { NavProps, NavItem } from "utils/types";
+import styled from 'styled-components';
+import { NavProps, NavItem } from 'utils/types';
 
 const Nav = styled.nav`
   position: fixed;
@@ -9,7 +9,6 @@ const Nav = styled.nav`
   left: 0;
   right: 0;
   width: 100%;
-  height: 60px;
   padding: 1rem;
   background-color: #fff;
   display: flex;
@@ -17,9 +16,8 @@ const Nav = styled.nav`
   justify-content: center;
 
   .home {
-    margin-top: 1rem;
     position: fixed;
-    left: .5rem;
+    left: 0.5rem;
   }
 `;
 
@@ -63,14 +61,13 @@ const NavContainerDiv = styled.div`
 const NavItemDiv = styled.div`
   cursor: pointer;
   height: 60px;
-  margin-top: 20px;
   width: 150px;
   display: flex;
-
+  align-items: center;
   img {
     position: relative;
-    margin-top: .25rem;
-    margin-left: .5rem;
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
     height: 20px;
     width: 20px;
   }
@@ -83,11 +80,10 @@ const NavItemLink = styled(Link)`
   color: #fff;
   background-color: transparent;
   position: relative;
-  marging-left: 80px;
 
   &:hover {
     color: #fff;
-    background-color: #5A5A5A;
+    background-color: #5a5a5a;
 
     &.home {
       background-color: transparent;
@@ -107,33 +103,53 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
   // useEffect for closing the popover when clicking outside of it
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (popoverRef.current && !popoverRef.current.contains(event.target as Node)) {
+      if (
+        popoverRef.current &&
+        !popoverRef.current.contains(event.target as Node)
+      ) {
         setIsPopoverVisible(false);
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
   // Array of floor objects containing id, label, path, and campus
   const floors = [
-    { id: '3.1', label: 'Amsterdam1', path: '/maps/amsterdam1', campus: 'Amsterdam' },
-    { id: '3.2', label: 'Amsterdam2', path: '/maps/amsterdam2', campus: 'Amsterdam' },
-    { id: '3.3', label: 'Rotterdam1', path: '/maps/rotterdam1', campus: 'Rotterdam' },
+    {
+      id: '3.1',
+      label: 'Amsterdam1',
+      path: '/maps/amsterdam1',
+      campus: 'Amsterdam',
+    },
+    {
+      id: '3.2',
+      label: 'Amsterdam2',
+      path: '/maps/amsterdam2',
+      campus: 'Amsterdam',
+    },
+    {
+      id: '3.3',
+      label: 'Rotterdam1',
+      path: '/maps/rotterdam1',
+      campus: 'Rotterdam',
+    },
   ];
 
   // Function to filter floors based on selected campus
   const getFloorsByCampus = (selectedCampus: string) => {
     // Filter floors based on the selected campus
-    const filteredFloors = floors.filter(floor => floor.campus === selectedCampus);
+    const filteredFloors = floors.filter(
+      (floor) => floor.campus === selectedCampus
+    );
 
     // If no campus is selected or the selected campus has no floors, return the floors of the first campus by default
     if (!selectedCampus || filteredFloors.length === 0) {
       const defaultCampus = floors[0].campus;
-      return floors.filter(floor => floor.campus === defaultCampus);
+      return floors.filter((floor) => floor.campus === defaultCampus);
     }
 
     return filteredFloors;
@@ -172,32 +188,35 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
   // Render navigation bar with navigation items and their sub-items, as well as the floor items
   return (
     <Nav>
-      <NavItemLink href="/" className='home'><img src="/io.svg" alt="home" /></NavItemLink>
+      <NavItemLink href="/" className="home">
+        <img src="/io.svg" alt="home" />
+      </NavItemLink>
       <NavContainerDiv ref={popoverRef}>
-        {navItems && navItems.map((navItem, index) => (
-          <NavItemDiv
-            key={index}
-            onMouseEnter={() => handleMouseEnter(navItem)}
-            onMouseLeave={handleMouseLeave}
-          >
-            {navItem.label}
-            <img src="/caret.svg" alt="caret" />
-            {isPopoverVisible && activeItem === navItem && (
-              <Popover>
-                <PopoverPointer />
-                {navItem.subItems && navItem.subItems.map((subItem, index) => (
-                  <PopoverContent
-                    key={index}
-                    onClick={() => handleSubItemClick(subItem)}
-                  >
-                    {subItem.label}
-                  </PopoverContent>
-                ))}
-              </Popover>
-            )}
-
-          </NavItemDiv>
-        ))}
+        {navItems &&
+          navItems.map((navItem, index) => (
+            <NavItemDiv
+              key={index}
+              onMouseEnter={() => handleMouseEnter(navItem)}
+              onMouseLeave={handleMouseLeave}
+            >
+              {navItem.label}
+              <img src="/caret.svg" alt="caret" />
+              {isPopoverVisible && activeItem === navItem && (
+                <Popover>
+                  <PopoverPointer />
+                  {navItem.subItems &&
+                    navItem.subItems.map((subItem, index) => (
+                      <PopoverContent
+                        key={index}
+                        onClick={() => handleSubItemClick(subItem)}
+                      >
+                        {subItem.label}
+                      </PopoverContent>
+                    ))}
+                </Popover>
+              )}
+            </NavItemDiv>
+          ))}
         <NavItemDiv
           key="floor"
           onMouseEnter={handleMouseEnterFloor}
@@ -209,7 +228,11 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
             <Popover>
               <PopoverPointer />
               {getFloorsByCampus(selectedCampus).map((floor) => (
-                <NavItemLink key={floor.id} href={floor.path} onClick={handleFloorItemClick}>
+                <NavItemLink
+                  key={floor.id}
+                  href={floor.path}
+                  onClick={handleFloorItemClick}
+                >
                   {floor.label}
                 </NavItemLink>
               ))}
