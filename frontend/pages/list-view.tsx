@@ -6,13 +6,13 @@ import mediaQueries from 'utils/mediaQueries';
 
 const CampusListContainer = styled.div`
   display: flex;
-	margin-left: 10px;
+  margin-left: 10px;
   flex-direction: column;
   overflow-x: scroll;
   white-space: nowrap;
-	
-	${mediaQueries.medium} {
-		width: 100vw;
+
+  ${mediaQueries.medium} {
+    width: 100vw;
   }
 
   /* Set transparent scrollbar by default */
@@ -56,21 +56,25 @@ const CampusListTitle = styled.h1`
 `;
 
 const CampusList: NextPage<CampusListProps> = ({ campuses, data }) => {
-	const campusArray = campuses.map((campus) => campus.name.toLocaleLowerCase().replace(' ', ''))
+  const campusArray = campuses?.map(
+    (campus) => campus.name.toLocaleLowerCase().replace(' ', '') || []
+  );
 
-	return (
-		<CampusListContainer >
-			<CampusListTitle>Meeting rooms</CampusListTitle>
-			{
-				data.map((campus) => (
-					campusArray.includes(campus.id) &&
-					<span key={campus.id}>
-						<CampusComponent campus={campus} />
-					</span>
-				))
-			}
-		</CampusListContainer>
-	);
+  return (
+    <CampusListContainer>
+      <CampusListTitle>Meeting rooms</CampusListTitle>
+      {data?.length
+        ? data.map(
+            (campus) =>
+              campusArray.includes(campus.id) && (
+                <span key={campus.id}>
+                  <CampusComponent campus={campus} />
+                </span>
+              )
+          )
+        : null}
+    </CampusListContainer>
+  );
 };
 
 export default CampusList;
