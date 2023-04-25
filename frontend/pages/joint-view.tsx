@@ -6,43 +6,47 @@ import { CampusListProps } from 'utils/types';
 import mediaQueries from 'utils/mediaQueries';
 
 const CampusListContainer = styled.div`
-	padding: 1rem;
+  padding: 1rem;
   margin: 0 auto;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-	${mediaQueries.medium} {
+  ${mediaQueries.medium} {
     display: flex;
-		flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 `;
 
 const CampusMapDiv = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: -5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -5rem;
 `;
 
-const JointCampusView: NextPage<CampusListProps> = ({ campuses, data, component }) => {
-	const _component = component || '';
+const JointCampusView: NextPage<CampusListProps> = ({
+  campuses,
+  data,
+  component,
+}) => {
+  const _component = component || '';
 
-	return (
-		<>
-			<CampusListContainer >
-				<ListView campuses={campuses} data={data} />
-				<CampusMapDiv>
-					{
-						React.createElement(_component, {
-							key: 'campusMap',
-						})
-					}
-				</CampusMapDiv>
-			</CampusListContainer>
-		</>
-	);
+  return (
+    <>
+      <CampusListContainer>
+        <ListView campuses={campuses} data={data} />
+        <CampusMapDiv>
+          {_component
+            ? React.createElement(_component, {
+                key: 'campusMap',
+              })
+            : null}
+        </CampusMapDiv>
+      </CampusListContainer>
+    </>
+  );
 };
 
 export default JointCampusView;
