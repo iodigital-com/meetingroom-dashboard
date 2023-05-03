@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import ListView from './list-view';
 import { CampusListProps } from 'utils/types';
 import mediaQueries from 'utils/mediaQueries';
+import { Components } from 'utils/helpers';
 
 const CampusListContainer = styled.div`
   padding: 1rem;
@@ -29,19 +30,20 @@ const CampusMapDiv = styled.div`
 const JointCampusView: NextPage<CampusListProps> = ({
   campuses,
   data,
-  component,
+  content,
 }) => {
-  const _component = component || '';
+  const _content = content || 'amsterdam1';
 
   return (
     <>
       <CampusListContainer>
         <ListView campuses={campuses} data={data} />
         <CampusMapDiv>
-          {_component
-            ? React.createElement(_component, {
-                key: 'campusMap',
-              })
+          {_content
+            ? React.createElement(Components[_content], {
+              block: _content,
+              data: data
+            })
             : null}
         </CampusMapDiv>
       </CampusListContainer>

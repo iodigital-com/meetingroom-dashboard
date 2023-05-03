@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Amsterdam1Map from '@/components/map-components/amsterdam1';
-import Amsterdam2Map from '@/components/map-components/amsterdam2';
 import ListPage from 'pages/list-view';
 import JointViewPage from 'pages/joint-view';
 import PageNotFound from 'pages/page-not-found';
@@ -13,6 +11,7 @@ import {
   CampusDataArrayType,
 } from 'utils/types';
 import mediaQueries from 'utils/mediaQueries';
+import { Components } from 'utils/helpers';
 
 const TabContainer = styled.div`
   display: flex;
@@ -82,11 +81,6 @@ const TabButton = styled.button`
   }
 `;
 
-const Components: { [key: string]: React.FC<any> } = {
-  amsterdam1: Amsterdam1Map,
-  amsterdam2: Amsterdam2Map,
-};
-
 const getCampusName = (content: string) => content.slice(0, -1);
 
 const TabView = ({ tabs, data }: TabViewProps) => {
@@ -112,13 +106,14 @@ const TabView = ({ tabs, data }: TabViewProps) => {
     const componetHash: ComponetHashType = {
       'Map View': React.createElement(Components[content], {
         block: content,
+        data: data
       }),
       'List View': <ListPage campuses={campusObject[content]} data={data} />,
       'Joint View': (
         <JointViewPage
           campuses={campusObject[content]}
           data={data}
-          component={Components[content]}
+          content={content}
         />
       ),
     };
