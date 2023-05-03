@@ -1,34 +1,34 @@
-interface Campus { 
-  [key: string]: string; 
+interface Campus {
+  [key: string]: string;
 }
 
-interface CampusData {
-	id: string;
-	schedules: {
-		start: string;
-		end: string;
-		location: string;
-		subject?: string;
-	}[];
+export interface CampusData {
+  id: string;
+  schedules: {
+    start: string;
+    end: string;
+    location: string;
+    subject?: string;
+  }[];
 };
 
 export interface CampusComponentProps {
-	campus: CampusData;
+  campus: CampusData;
 }
 
 export interface CampusListProps {
-	campuses: Campus[];
-	data: CampusData[];
-  component?: React.FunctionComponent;
+  campuses: Campus[];
+  data: CampusData[];
+  content?: string;
 }
 
 export interface MapPageData {
-	slug: string;
-	campusData: any;
+  slug: string;
+  campusData: any;
 }
 
 export interface MapPageProps {
-	data: MapPageData;
+  data: MapPageData;
 }
 
 export interface CampusNameHash {
@@ -36,26 +36,26 @@ export interface CampusNameHash {
 }
 
 interface Tab {
-	label: string;
-	content: string;
+  label: string;
+  content: string;
 }
 
 export interface TabViewProps {
-	tabs: Tab[];
-	data: any;
+  tabs: Tab[];
+  data: any;
 }
 
-export type CampusDataType =  { 
-  [key: string]: { 
-    [key: string]: { 
-      [key: string]: string; 
+export type CampusDataType = {
+  [key: string]: {
+    [key: string]: {
+      [key: string]: string;
     }[];
-  }; 
+  };
 }
 
-export type CampusDataArrayType =  { 
-  [key: string]: { 
-    [key: string]: string; 
+export type CampusDataArrayType = {
+  [key: string]: {
+    [key: string]: string;
   }[];
 }
 
@@ -85,3 +85,17 @@ export type TooltipProps = {
   children: React.ReactNode;
   position?: 'top' | 'bottom' | 'left' | 'right';
 };
+
+export interface RoomData {
+  [key: string]: {
+    schedules: [{
+      start: string;
+      end: string;
+    }]
+  }
+}
+
+export interface MapComponentProps {
+  block: string;
+  data: CampusData[];
+}
