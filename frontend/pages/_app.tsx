@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import '@/theme/index.css';
 
 import type { AppProps } from 'next/app';
@@ -56,6 +57,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <ResponsiveNavBar navItems={navItems} />
       <Component {...pageProps} />
+      <script src="utils/zoom.js" />
     </AppLayout>
   );
 }
