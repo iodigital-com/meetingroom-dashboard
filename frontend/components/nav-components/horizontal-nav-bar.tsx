@@ -1,106 +1,107 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { NavProps, NavItem as NavItemProps } from 'utils/types';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
+
 import Link from 'next/link';
 import styled from 'styled-components';
-import { NavProps, NavItem } from 'utils/types';
+import { useRouter } from 'next/navigation';
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+`;
+
+const NavItemLink = styled(Link)`
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  position: relative;
+
+  img {
+    height: 65px;
+  }
+`;
 
 const Nav = styled.nav`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 1rem;
-  background-color: #fff;
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: column;
+  margin-left: 2.5rem;
+  justify-content: space-between;
+  width: 100%;
+`;
 
-  .home {
-    position: fixed;
-    left: 0.5rem;
-  }
+const TopNav = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+`;
+
+const BottomNav = styled.div`
+  display: flex;
+  gap: 3rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+`;
+
+const NavItem = styled.a`
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
 `;
 
 const Popover = styled.div`
   position: absolute;
-  top: 70px;
-  width: 200px;
+  top: 1.5rem;
+  min-width: 17.5rem;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 4px;
-  padding: 10px 0;
+  padding: 2rem 3rem;
 `;
+
+const ArrowIcon = styled(ArrowForwardIcon)``;
 
 const PopoverContent = styled.div`
   cursor: pointer;
   margin: 0.5rem;
   height: auto;
   color: #fff;
-`;
-
-const PopoverPointer = styled.div`
-  position: absolute;
-  top: -10px;
-  left: 20%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
-`;
-
-const NavContainerDiv = styled.div`
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-`;
-
-const NavItemDiv = styled.div`
-  cursor: pointer;
-  height: 60px;
-  width: 150px;
+  font-weight: normal;
   display: flex;
   align-items: center;
-  img {
-    position: relative;
-    margin-top: 0.25rem;
-    margin-left: 0.5rem;
-    height: 20px;
-    width: 20px;
-  }
-`;
-
-const NavItemLink = styled(Link)`
-  display: block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  color: #fff;
-  background-color: transparent;
-  position: relative;
+  justify-content: space-between;
+  width: 100%;
 
   &:hover {
-    color: #fff;
-    background-color: #5a5a5a;
-
-    &.home {
-      background-color: transparent;
+    ${ArrowIcon} {
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(10px);
     }
   }
 `;
 
-// HorizontalNavBar component displays a horizontal navigation bar with multiple navigation items and sub-items (including campus and floor).
+// TODO: Pass in static nav items as props
+const staticNavItems: NavItemProps[] = [
+  {
+    id: '2',
+    label: 'Email',
+    path: 'mailto:business@iodigital.com',
+  },
+];
+
 const HorizontalNavBar = ({ navItems }: NavProps) => {
-  // States for handling popover visibility and active items
+  const router = useRouter();
   const [isPopoverVisible, setIsPopoverVisible] = useState(false);
-  const [isFloorPopoverVisible, setIsFloorPopoverVisible] = useState(false);
-  const [activeItem, setActiveItem] = useState<NavItem | null>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
+  const [activeItem, setActiveItem] = useState<NavItemProps | null>(null);
   const [selectedCampus, setSelectedCampus] = useState('');
 
-  // useEffect for closing the popover when clicking outside of it
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -117,7 +118,20 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
     };
   }, []);
 
-  // Array of floor objects containing id, label, path, and campus
+  const handleMouseEnter = (navItem: NavItemProps) => {
+    setActiveItem(navItem);
+    setIsPopoverVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPopoverVisible(false);
+  };
+
+  const handleSubItemClick = (subItem: NavItemProps) => {
+    setSelectedCampus(subItem.label);
+    setIsPopoverVisible(false);
+  };
+
   const floors = [
     {
       id: '3.1',
@@ -139,108 +153,79 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
     },
   ];
 
-  // Function to filter floors based on selected campus
-  const getFloorsByCampus = (selectedCampus: string) => {
-    // Filter floors based on the selected campus
-    const filteredFloors = floors.filter(
-      (floor) => floor.campus === selectedCampus
-    );
+  const filteredFloors = selectedCampus
+    ? floors.filter((floor) => floor.campus === selectedCampus)
+    : floors.filter((floor) => floor.campus === 'Amsterdam');
 
-    // If no campus is selected or the selected campus has no floors, return the floors of the first campus by default
-    if (!selectedCampus || filteredFloors.length === 0) {
-      const defaultCampus = floors[0].campus;
-      return floors.filter((floor) => floor.campus === defaultCampus);
-    }
-
-    return filteredFloors;
-  };
-
-  // Event handlers for showing and hiding popover on mouse enter and leave
-  const handleMouseEnter = (navItem: NavItem) => {
-    setActiveItem(navItem);
-    setIsPopoverVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsPopoverVisible(false);
-  };
-
-  // Event handlers for showing and hiding floor popover on mouse enter and leave
-  const handleMouseEnterFloor = () => {
-    setIsFloorPopoverVisible(true);
-  };
-
-  const handleMouseLeaveFloor = () => {
-    setIsFloorPopoverVisible(false);
-  };
-
-  // Event handler for updating selected campus on sub-item click
-  const handleSubItemClick = (subItem: NavItem) => {
-    setSelectedCampus(subItem.label);
-    setIsPopoverVisible(false);
-  };
-
-  // Event handler for hiding floor popover on floor item click
-  const handleFloorItemClick = () => {
-    setIsFloorPopoverVisible(false);
-  };
-
-  // Render navigation bar with navigation items and their sub-items, as well as the floor items
   return (
-    <Nav>
+    <Container ref={popoverRef}>
       <NavItemLink href="/" className="home">
         <img src="/io.svg" alt="home" />
       </NavItemLink>
-      <NavContainerDiv ref={popoverRef}>
-        {navItems &&
-          navItems.map((navItem, index) => (
-            <NavItemDiv
-              key={index}
-              onMouseEnter={() => handleMouseEnter(navItem)}
+      <Nav>
+        <TopNav>
+          {staticNavItems?.map((item) => (
+            <NavItem key={`tNav-${item.id}`} href={item.path}>
+              {item.label}
+              {item.subItems && <img src="/caret.svg" alt="caret" />}
+            </NavItem>
+          ))}
+        </TopNav>
+        <BottomNav>
+          {navItems?.map((item: NavItemProps) => (
+            <NavItem
+              key={`bNav-${item.id}`}
+              href={item.path}
+              onMouseEnter={() => handleMouseEnter(item)}
               onMouseLeave={handleMouseLeave}
             >
-              {navItem.label}
-              <img src="/caret.svg" alt="caret" />
-              {isPopoverVisible && activeItem === navItem && (
+              {item.label}
+              {item.subItems && <img src="/caret.svg" alt="caret" />}
+              {isPopoverVisible && activeItem === item && (
                 <Popover>
-                  <PopoverPointer />
-                  {navItem.subItems &&
-                    navItem.subItems.map((subItem, index) => (
-                      <PopoverContent
-                        key={index}
-                        onClick={() => handleSubItemClick(subItem)}
-                      >
-                        {subItem.label}
-                      </PopoverContent>
-                    ))}
+                  {item.subItems?.map((subItem, index) => (
+                    <PopoverContent
+                      key={index}
+                      onClick={() => handleSubItemClick(subItem)}
+                    >
+                      {subItem.label}
+                      <ArrowIcon />
+                    </PopoverContent>
+                  ))}
                 </Popover>
               )}
-            </NavItemDiv>
+            </NavItem>
           ))}
-        <NavItemDiv
-          key="floor"
-          onMouseEnter={handleMouseEnterFloor}
-          onMouseLeave={handleMouseLeaveFloor}
-        >
-          Floor
-          <img src="/caret.svg" alt="caret" />
-          {isFloorPopoverVisible && (
-            <Popover>
-              <PopoverPointer />
-              {getFloorsByCampus(selectedCampus).map((floor) => (
-                <NavItemLink
-                  key={floor.id}
-                  href={floor.path}
-                  onClick={handleFloorItemClick}
-                >
-                  {floor.label}
-                </NavItemLink>
-              ))}
-            </Popover>
-          )}
-        </NavItemDiv>
-      </NavContainerDiv>
-    </Nav>
+
+          {/* Floor */}
+          <NavItem
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={() =>
+              handleMouseEnter({ id: 'floor', label: 'Floor' })
+            }
+          >
+            Floor
+            <img src="/caret.svg" alt="caret" />
+            {isPopoverVisible && activeItem?.label === 'Floor' && (
+              <Popover>
+                {filteredFloors?.map((subItem, index) => (
+                  <PopoverContent
+                    key={index}
+                    onClick={() => {
+                      handleMouseLeave();
+                      if (subItem.path) router.push(subItem.path);
+                    }}
+                  >
+                    {subItem.label}
+                    <ArrowIcon />
+                  </PopoverContent>
+                ))}
+              </Popover>
+            )}
+          </NavItem>
+        </BottomNav>
+      </Nav>
+    </Container>
   );
 };
 

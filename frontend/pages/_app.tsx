@@ -3,20 +3,17 @@ import '@/theme/index.css';
 
 import type { AppProps } from 'next/app';
 import ResponsiveNavBar from '../components/nav-components/responsive-nav-bar';
-import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 import AppLayout from '@/layouts/AppLayout';
 import Head from 'next/head';
 
-const GlobalStyle = createGlobalStyle`
-  html {
-    margin: 0;
-    padding: 0;
-    font-family: TTCommonsPro,ui-sans-serif,sans-serif;
-    // font-size: 1.125rem;
-    font-size: 16px;
-    line-height: 1.5
-  }
+const Body = styled.div`
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: TTCommonsPro, ui-sans-serif, sans-serif;
+  font-size: 1rem;
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -54,10 +51,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta property="og:image" content="/io.svg" />
       </Head>
-      <GlobalStyle />
-      <ResponsiveNavBar navItems={navItems} />
-      <Component {...pageProps} />
-      <script src="utils/zoom.js" />
+      <Body>
+        <ResponsiveNavBar navItems={navItems} />
+        <Component {...pageProps} />
+        {/* <script src="utils/zoom.js" /> */}
+      </Body>
     </AppLayout>
   );
 }
