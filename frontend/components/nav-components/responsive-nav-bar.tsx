@@ -1,4 +1,3 @@
-import React from 'react';
 import HorizontalNavBar from './horizontal-nav-bar';
 import VerticalNavBar from './vertical-nav-bar';
 import styled from 'styled-components';
@@ -23,7 +22,8 @@ const ResponsiveNavBar = (props: NavProps) => {
   return (
     <>
       <ResponsiveNavBarDiv>
-        <HorizontalNavBar {...props} />
+        <HorizontalNavBar {...props} primary={true} />
+        <HorizontalNavBar {...props} primary={false} />
       </ResponsiveNavBarDiv>
       <ResponsiveVerticalNavBarDiv>
         <VerticalNavBar {...props} />
@@ -33,5 +33,3 @@ const ResponsiveNavBar = (props: NavProps) => {
 };
 
 export default ResponsiveNavBar;
-
-

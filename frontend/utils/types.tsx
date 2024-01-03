@@ -72,6 +72,7 @@ export interface NavItem {
 
 export interface NavProps {
   navItems: NavItem[];
+  primary?: boolean;
 }
 
 export type AccordionProps = {

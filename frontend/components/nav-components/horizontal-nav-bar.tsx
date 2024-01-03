@@ -1,21 +1,29 @@
 import { useEffect, useRef, useState } from 'react';
-import { NavProps, NavItem as NavItemProps } from 'utils/types';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
-
 import Link from 'next/link';
 import styled from 'styled-components';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 
-const Container = styled.div`
+import { NavProps, NavItem as NavItemProps } from 'utils/types';
+
+const Container = styled.div<{ $primary?: boolean; $scrolled?: boolean }>`
+  position: ${(props) => (!props.$primary ? 'fixed' : 'relative')};
+  background-color: ${(props) => (!props.$primary ? '#ffffff' : 'transparent')};
+  transform: ${(props) => (!props.$primary ? 'translateY(-90px)' : 'none')};
+  opacity: ${(props) => (!props.$primary ? (props.$scrolled ? 1 : 0) : 1)};
+  box-shadow: ${(props) =>
+    !props.$primary ? '1px 3px 5px 0px rgba(0, 0, 0, 0.1)' : 'none'};
+  padding-top: ${(props) => (!props.$primary ? '1.125rem' : '0.75rem')};
+  padding-bottom: ${(props) => (!props.$primary ? '1.125rem' : '0.75rem')};
+  padding-left: ${(props) => (!props.$primary ? '3rem' : '6.5rem')};
+  padding-right: ${(props) => (!props.$primary ? '3rem' : '6.5rem')};
+
   display: flex;
   width: 100%;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 6.5rem;
-  padding-right: 6.5rem;
+  transition: opacity 0.3s ease-in-out;
 `;
 
-const NavItemLink = styled(Link)`
+const NavItemLink = styled(Link)<{ $primary?: boolean }>`
   display: block;
   text-decoration: none;
   color: #fff;
@@ -23,15 +31,18 @@ const NavItemLink = styled(Link)`
   position: relative;
 
   img {
-    height: 65px;
+    height: ${(props) => (!props.$primary ? '40px' : '65px')};
   }
 `;
 
-const Nav = styled.nav`
+const Nav = styled.nav<{ $primary?: boolean }>`
+  flex-direction: ${(props) => (!props.$primary ? 'row-reverse' : 'column')};
+  justify-content: ${(props) => (!props.$primary ? '' : 'space-between')};
+  align-items: ${(props) => (!props.$primary ? 'center' : '')};
+  gap: ${(props) => (!props.$primary ? '3rem' : '')};
+
   display: flex;
-  flex-direction: column;
   margin-left: 2.5rem;
-  justify-content: space-between;
   width: 100%;
 `;
 
@@ -41,7 +52,9 @@ const TopNav = styled.div`
   gap: 1.5rem;
 `;
 
-const BottomNav = styled.div`
+const BottomNav = styled.div<{ $primary?: boolean }>`
+  justify-content: ${(props) => (!props.$primary ? 'flex-end' : 'flex-start')};
+
   display: flex;
   gap: 3rem;
   font-size: 1.125rem;
@@ -95,12 +108,25 @@ const staticNavItems: NavItemProps[] = [
   },
 ];
 
-const HorizontalNavBar = ({ navItems }: NavProps) => {
+const HorizontalNavBar = ({ navItems, primary }: NavProps) => {
   const router = useRouter();
-  const [isPopoverVisible, setIsPopoverVisible] = useState(false);
-  const popoverRef = useRef<HTMLDivElement>(null);
   const [activeItem, setActiveItem] = useState<NavItemProps | null>(null);
   const [selectedCampus, setSelectedCampus] = useState('');
+  const [isPopoverVisible, setIsPopoverVisible] = useState(false);
+  const popoverRef = useRef<HTMLDivElement>(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -158,11 +184,15 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
     : floors.filter((floor) => floor.campus === 'Amsterdam');
 
   return (
-    <Container ref={popoverRef}>
-      <NavItemLink href="/" className="home">
+    <Container
+      ref={popoverRef}
+      $primary={primary}
+      $scrolled={scrollPosition > 90}
+    >
+      <NavItemLink href="/" className="home" $primary={primary}>
         <img src="/io.svg" alt="home" />
       </NavItemLink>
-      <Nav>
+      <Nav $primary={primary}>
         <TopNav>
           {staticNavItems?.map((item) => (
             <NavItem key={`tNav-${item.id}`} href={item.path}>
@@ -171,7 +201,7 @@ const HorizontalNavBar = ({ navItems }: NavProps) => {
             </NavItem>
           ))}
         </TopNav>
-        <BottomNav>
+        <BottomNav $primary={primary}>
           {navItems?.map((item: NavItemProps) => (
             <NavItem
               key={`bNav-${item.id}`}
